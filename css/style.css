@@ -19,6 +19,15 @@ body{
     background-color: #FF900E;
     border-radius: 8px;
     border: none;
+    padding: 20px 25px;
+    cursor: pointer;
+    /* margin: 20px 0; */
+    transition: .6s;
+
+}
+
+.btn-primary:hover{
+    background-color: #dd821b;
 }
 
 /* header style start */
@@ -32,16 +41,20 @@ header{
     color: #131313;
     font-size: 45px;
     font-weight: 700;
+    margin: 0;
+    
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav ul{
     display: flex;
+    margin: 0;
     
 }
 
@@ -76,4 +89,26 @@ nav li a{
     color: #727272;
     font-size: 16px;
     font-weight: 400;
+    margin: 20px 0;
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+
+/* Responsive media queries */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+
 }
